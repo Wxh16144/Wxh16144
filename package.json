@@ -1,0 +1,39 @@
+{
+  "name": "wxh16144",
+  "version": "1.0.3",
+  "description": "I'm Wxh16144 (Wuxh) .",
+  "main": "./index.js",
+  "bin": "./bin/index.js",
+  "files": [
+    "bin/index.js",
+    "index.js",
+    "Wxh16144"
+  ],
+  "scripts": {
+    "dev": "node ./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wxh16144/Wxh16144.git"
+  },
+  "author": {
+    "name": "Wuxh",
+    "email": "wxh16144@qq.com",
+    "url": "https://blog.wxhboy.cn"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Wxh16144/Wxh16144/issues"
+  },
+  "homepage": "https://github.com/Wxh16144/Wxh16144#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "mri": "^1.2.0",
+    "open": "^8.4.0"
+  },
+  "packageManager": "npm",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
