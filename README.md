@@ -23,9 +23,6 @@ npx wxh16144 # Add `-H` parameters to learn more
 <code><a href="https://www.docker.com/"><img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg"></a></code>
 <code><a href="https://www.nginx.com/"><img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg"></a></code>
 
----
-
-<div>
-  <img src="https://github-readme-stats.vercel.app/api?username=Wxh16144" alt="GitHub stats" align="left" width="46%">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=Wxh16144&langs_count=5" alt="Top Langs" align="right" width="46%"/>
-</div>
+| GitHub stats | Top Langs |
+| :---:|:---:|
+| [![GitHub stats](https://github-readme-stats.vercel.app/api?username=Wxh16144)](https://github.com/Wxh16144#js-contribution-activity) | [![Top Langs](https://github-readme-stats.vercel.app/api/wakatime?username=Wxh16144&langs_count=5)](https://wakatime.com/share/@Wxh16144/7bd4c6b7-52cb-4936-9964-0be04114e6d4.svg.html) |
