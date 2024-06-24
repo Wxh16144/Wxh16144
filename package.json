@@ -9,6 +9,9 @@
     "index.js",
     "Wxh16144"
   ],
+  "keywords": [
+    "profile"
+  ],
   "scripts": {
     "dev": "node ./bin/index.js"
   },
