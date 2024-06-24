@@ -9,21 +9,25 @@ const resolvePath = (...arg) => path.resolve(__dirname, ...arg);
 const readFileSync = (path) => fs.readFileSync(resolvePath(path), 'utf8');
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-const autherLogo = readFileSync('./Wxh16144');
+const authorLogo = readFileSync('./Wxh16144');
 const package = JSON.parse(readFileSync('./package.json'));
 
 const contactList = {
   github: 'https://github.com/wxh16144',
-  twitter: 'https://twitter.com/wxh16144',
+  // twitter: 'https://twitter.com/wxh16144',
+  x: 'https://x.com/wxh16144',
   weibo: 'https://weibo.com/wxh16144',
-  zhihu: 'https://www.zhihu.com/people/wxh16144',
+  zhihu: 'https://zhihu.com/people/wxh16144',
   telegram: 'https://t.me/wxh16144',
   blog: 'https://wxh16144.github.io',
   email: `mailto:${package.author.email}`,
   dev: 'https://dev.to/wxh16144',
-  npm: 'https://www.npmjs.com/~wxh16144',
+  npm: 'https://npmjs.com/~wxh16144',
   docker: 'https://hub.docker.com/u/wxh16144',
+  v2ex: 'https://v2ex.com/member/wxh16144',
+  wakatime: 'https://wakatime.com/@wxh16144',
   // tel: 'tel:+86-xxx-xxxx-xxxx',
+  '.': package.homepage,
 }
 
 const argv = mri(process.argv.slice(2), {
@@ -83,7 +87,7 @@ async function main(args = argv) {
   }
 
   if (!hideLogo) {
-    console.log(chalk.hex(utils.randomHexColorCode())(autherLogo));
+    console.log(chalk.hex(utils.randomHexColorCode())(authorLogo));
     await sleep(args.speed)
     console.log(...genLine('=', '#91caff'));
   } else {
