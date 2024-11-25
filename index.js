@@ -64,7 +64,7 @@ async function main(args = argv) {
     .entries(contactList)
     .reduce((acc, [name, link]) => pickLinks.includes(name) ? { ...acc, [name]: link } : acc, {});
 
-  const hideLogo = args.hidelogo;
+  const hideLogo = Object.keys(links).length < Object.keys(contactList).length || args.hidelogo;
 
   if (args.version) {
     console.log(`${chalk.bold(package.name)}: ${chalk.green('v' + package.version)}`);
@@ -74,7 +74,7 @@ async function main(args = argv) {
   if (args.help || Object.keys(links).length === 0) {
     console.log(`
     ${chalk.green(`${chalk.bold(package.name)} [options]`)}
-      -${chalk.bold('p')}, --pick [${Object.keys(contactList).map(val=>chalk.hex('#91caff')(val)).join('|')}]
+      -${chalk.bold('p')}, --pick [${Object.keys(contactList).map(val => chalk.hex('#91caff')(val)).join('|')}]
       -${chalk.bold('o')}, --open: use default browser to open the link.
       -${chalk.bold('h')}, --hidelogo: hide auther logo.
       -${chalk.bold('s')}, --speed: set the speed of animation.
