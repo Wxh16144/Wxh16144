@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="{{FAVICON}}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="吴小红">
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta name="keywords" content="{{KEYWORDS}}">
+  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  <meta property="og:image" content="https://github.com/Wxh16144.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{TITLE}}">
+  <meta name="twitter:description" content="{{DESCRIPTION}}">
+  <meta name="twitter:image" content="https://github.com/Wxh16144.png">
+
+  <link rel="preload" href="https://registry.npmmirror.com/normalize.css/8.0.1/files/normalize.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://registry.npmmirror.com/normalize.css/8.0.1/files/normalize.css">
+  </noscript>
+
+  <link rel="preload" href="https://registry.npmmirror.com/github-markdown-css/5.8.1/files/github-markdown.css"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://registry.npmmirror.com/github-markdown-css/5.8.1/files/github-markdown.css">
+  </noscript>
+
+  <style>
+    html {
+      width: 100%;
+      display: flex;
+      justify-content: center
+    }
+
+    :where(body) {
+      background-color: #fff
+    }
+
+    :where(footer) {
+      display: flex;
+      align-items: center;
+      gap: var(--base-size-8, 8px);
+      padding-block: var(--base-size-16, 16px);
+      border-block-start: 1px solid var(--borderColor-default, #3d444d)
+    }
+
+    @media (prefers-color-scheme:dark) {
+      :where(body) {
+        background-color: #0d1117
+      }
+    }
+
+    @media (min-width:768px) {
+      html>body {
+        width: 768px
+      }
+    }
+
+    @media (min-width:1200px) {
+      html>body {
+        width: 1200px
+      }
+    }
+
+    @media (max-width:767px) {
+      html>body {
+        padding: 10px
+      }
+    }
+
+    main {
+      width: 100%
+    }
+
+    @media print {
+      footer {
+        display: none !important
+      }
+
+      @page {
+        size: A4
+      }
+    }
+
+    /* beautify ignore:start */
+    {{CSS_CONTENT}}
+    /* beautify ignore:end */
+
+    /* 外链标识：新窗口打开的链接自动追加 ↗ 箭头 */
+    a[target="_blank"]::after {
+      content: '↗';
+      margin-left: 2px;
+      font-size: 0.7em;
+      vertical-align: super;
+      opacity: 0.7;
+    }
+  </style>
+  <title>{{TITLE}}</title>
+</head>
+
+<body class="markdown-body">
+  <main>
+    {{RESUME}}
+  </main>
+  <footer>
+    <button onclick="window.print()" style="all:unset">🖨️ Print</button>
+  </footer>
+</body>
+
+</html>

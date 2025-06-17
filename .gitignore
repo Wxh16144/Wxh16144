@@ -1,0 +1,17 @@
+resume/
+resume.md
+
+node_modules
+
+# logs
+*.log
+package-lock.json
+pnpm-lock.yaml
+bun.lock
+
+# output
+dist/
+
+# tmp files
+*.tmp
+tmp/
