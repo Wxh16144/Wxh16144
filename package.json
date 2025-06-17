@@ -1,0 +1,45 @@
+{
+	"name": "wxh16144-resume",
+	"description": "毕业于四川大学, 工作经验6年+, 专注性能调优和用户体验提升, 扎实的前端基础。",
+	"private": true,
+	"keywords": [
+		"前端工程师",
+		"Frontend Engineer",
+		"Resume",
+		"吴小红",
+		"Wxh16144"
+	],
+	"author": {
+		"name": "Wxh16144",
+		"name_cn": "吴小红",
+		"email": "wxh16144@qq.com"
+	},
+	"nodemonConfig": {
+		"watch": [
+			"resume.md"
+		],
+		"exec": "bun run build.ts",
+		"delay": "1000"
+	},
+	"scripts": {
+		"dev": "nodemon",
+		"preview": "live-server --port=3001 dist"
+	},
+	"dependencies": {
+		"@microflash/rehype-figure": "^2.1.4",
+		"@types/node": "^24.0.3",
+		"fs-extra": "^11.3.0",
+		"html-minifier": "^4.0.0",
+		"live-server": "^1.2.2",
+		"node-fetch": "^3.3.2",
+		"nodemon": "^3.1.10",
+		"rehype-raw": "^7.0.0",
+		"rehype-stringify": "^10.0.1",
+		"remark": "^15.0.1",
+		"remark-frontmatter": "^5.0.0",
+		"remark-gfm": "^4.0.1",
+		"remark-rehype": "^11.1.2",
+		"to-vfile": "^8.0.0",
+		"vfile-matter": "^5.0.1"
+	}
+}
