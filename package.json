@@ -2,18 +2,19 @@
   "name": "wxh16144",
   "version": "1.2.1",
   "description": "I'm Wxh16144 (Wuxh) .",
-  "main": "./index.js",
-  "bin": "./bin/index.js",
+  "type": "module",
+  "main": "./index.mjs",
+  "bin": "./bin/index.mjs",
   "files": [
-    "bin/index.js",
-    "index.js",
+    "bin/index.mjs",
+    "index.mjs",
     "Wxh16144"
   ],
   "keywords": [
     "profile"
   ],
   "scripts": {
-    "dev": "node ./bin/index.js"
+    "dev": "node ./bin/index.mjs"
   },
   "repository": {
     "type": "git",
@@ -32,8 +33,12 @@
   "dependencies": {
     "@wuxh/utils": "^1.0.0",
     "chalk": "^4.1.2",
+    "fzf": "^0.5.2",
     "mri": "^1.2.0",
     "open": "^8.4.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   },
   "packageManager": "npm",
   "publishConfig": {
