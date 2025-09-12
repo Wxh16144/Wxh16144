@@ -1,3 +1,4 @@
+import './contact.js';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -18,19 +19,7 @@ const authorLogo = readFileSync('./Wxh16144');
 const pkg = JSON.parse(readFileSync('./package.json'));
 
 const contactList = {
-  github: 'https://github.com/wxh16144',
-  twitter: 'https://twitter.com/wxh16144',
-  x: 'https://x.com/wxh16144',
-  weibo: 'https://weibo.com/wxh16144',
-  zhihu: 'https://zhihu.com/people/wxh16144',
-  telegram: 'https://t.me/wxh16144',
-  blog: 'https://wxh16144.github.io',
-  email: `mailto:${pkg.author.email}`,
-  dev: 'https://dev.to/wxh16144',
-  npm: 'https://npmjs.com/~wxh16144',
-  docker: 'https://hub.docker.com/u/wxh16144',
-  v2ex: 'https://v2ex.com/member/wxh16144',
-  wakatime: 'https://wakatime.com/@wxh16144',
+  ...globalThis.Wxh16144,
   // tel: 'tel:+86-xxx-xxxx-xxxx',
   '.': pkg.homepage, // source
 }
@@ -60,7 +49,6 @@ function genExample() {
 }
 
 async function main(args = argv) {
-
   let pickLinks = [];
   if (Array.isArray(args.pick)) {
     pickLinks = args.pick.map(x => x.toLowerCase());
@@ -70,7 +58,7 @@ async function main(args = argv) {
     pickLinks = Object.keys(contactList);
   }
 
-  if (Array.isArray && args._.length === 1 && args._[0].length) {
+  if (Array.isArray(args._) && args._.length === 1 && args._[0].length) {
     const inputKey = args._[0].toLowerCase();
     const keys = Object.keys(contactList);
     const fzf = new Fzf(keys);
