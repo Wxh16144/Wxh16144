@@ -70,12 +70,14 @@ async function main(args = argv) {
     pickLinks = Object.keys(contactList);
   }
 
-  if (args._.length === 1 && args._[0].length) {
+  if (Array.isArray && args._.length === 1 && args._[0].length) {
     const inputKey = args._[0].toLowerCase();
     const keys = Object.keys(contactList);
     const fzf = new Fzf(keys);
     const [result] = fzf.find(inputKey);
-    pickLinks = [result?.item].filter(Boolean);
+    if (result) {
+      pickLinks = [result.item].filter(Boolean);
+    }
 
     if (!('open' in args)) {
       args.open = !!pickLinks.length
