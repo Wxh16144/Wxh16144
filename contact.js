@@ -22,4 +22,6 @@
   exports.docker = 'https://hub.docker.com/u/wxh16144';
   exports.v2ex = 'https://v2ex.com/member/wxh16144';
   exports.wakatime = 'https://wakatime.com/@wxh16144';
+  exports.strava = 'https://strava.com/athletes/wxh16144';
+  exports.steam = 'https://steamcommunity.com/id/wxh16144';
 });
