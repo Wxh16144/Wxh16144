@@ -1,6 +1,6 @@
 {
   "name": "wxh16144",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "I'm Wxh16144 (Wuxh) .",
   "type": "module",
   "module": "./index.mjs",
