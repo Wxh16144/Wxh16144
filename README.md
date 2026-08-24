@@ -18,6 +18,7 @@ npx wxh16144 # Add `-H` parameters to learn more
 
 **Languages and Tools** [Wxh16144's Dotfiles](https://github.com/Wxh16144/dotfiles)
 
+<p>
 <code><a href="https://www.typescriptlang.org/"><img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"></a></code>
 <code><a href="https://tc39.es/zh-Hans/"><img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"></a></code>
 <code><a href="https://zh-hans.react.dev/"><img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"></a></code>
@@ -34,6 +35,7 @@ npx wxh16144 # Add `-H` parameters to learn more
 <code><a href="https://git-scm.com/"><img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg"></a></code>
 <code><a href="https://www.docker.com/"><img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg"></a></code>
 <code><a href="https://www.nginx.com/"><img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg"></a></code>
+</p>
 
 <!-- links -->
 [analyze-img]:https://github-readme-stats.vercel.app/api?username=Wxh16144

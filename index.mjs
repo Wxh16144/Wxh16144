@@ -68,7 +68,7 @@ async function main(args = argv) {
     }
 
     if (!('open' in args)) {
-      args.open = !!pickLinks.length
+      args.open = pickLinks.length === 1;
     }
   }
 
